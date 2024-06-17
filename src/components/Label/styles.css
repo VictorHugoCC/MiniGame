@@ -1,0 +1,15 @@
+#h2-container{
+  height: 131px;
+  font-size: 60px;
+  padding: 0 32px 0 32px;
+  background: linear-gradient(to bottom, #F09E71, #FED985);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}

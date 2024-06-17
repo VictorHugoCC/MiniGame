@@ -1,0 +1,20 @@
+#h2-save {
+  width: 388px;
+  height: 82px;
+  border-radius: 60px;
+  font-size: 52px;
+  background: linear-gradient(to bottom, #61B5CB, #93B592);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-shadow:
+    -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 red;
+  margin-top: 20px; /* Ajuste conforme necessário */
+  cursor: pointer;
+}
+
+

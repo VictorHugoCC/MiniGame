@@ -1,0 +1,22 @@
+.name-input {
+  width: 471px;
+  height: 131px;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white; /* Cor do texto dentro do input */
+  background: linear-gradient(to bottom, #F09E71, #FED985);
+  border: none;
+  outline: none;
+
+}
+
+.name-input:focus{
+  background-color: yellowgreen;
+}
+
+/* Placeholder padrão */
+.name-input::placeholder {  
+  color: #FED985; /* Cor do placeholder */
+  opacity: 0.5; /* Opacidade do placeholder */
+}

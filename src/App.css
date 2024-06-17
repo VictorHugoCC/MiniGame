@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+#tela-rosa {
+  width: 90%;
+  max-width: 977px;
+  height: 80%;
+  max-height: 735px;
+  border: 5px solid white;
+  border-radius: 10px;
+  background-color: #D5A0C4;
+  position: absolute;
+  z-index: -1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#tela-preta {
+  width: 95%;
+  max-width: 116vh;
+  height: 70%;
+  max-height: 617px;
+  border: 5px solid white;
+  border-radius: 10px;
+  position: absolute;
+  background-color: black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  gap: 64px;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#rank {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1827px) {
+  #tela-rosa {
+    width: 85%;
+    height: 900px;
   }
-  to {
-    transform: rotate(360deg);
+  #tela-preta {
+    width: 90%;
+    height: 700px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #tela-rosa {
+    width: 80%;
+    height: 800px;
+  }
+  #tela-preta {
+    width: 85%;
+    height: 600px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #tela-rosa {
+    width: 75%;
+    height: 700px;
+  }
+  #tela-preta {
+    width: 80%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  #tela-rosa {
+    width: 70%;
+    height: 600px;
+  }
+  #tela-preta {
+    width: 75%;
+    height: 400px;
+  }
+
+  #rank {
+    position: static;
+    margin: 20px 0;
+  }
+
+  .App {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  #tela-rosa {
+    width: 90%;
+    height: 500px;
+  }
+  #tela-preta {
+    width: 95%;
+    height: 400px;
+  }
+
+  #tela-preta {
+    gap: 32px;
+  }
+
+  #rank {
+    position: static;
+    margin: 10px 0;
+  }
+
+  .App {
+    flex-direction: column;
+    padding: 10px;
   }
 }
